@@ -9,11 +9,8 @@ import Footer from '../Footer/Footer';
 
 const services = [
     { name: "Land Leasing", image: images.lease, description: "We offer flexible land leasing options to suit your agricultural needs." },
-    { name: "Agricultural Consultancies", image: images.Consultancies, description: "Get expert advice and consultancy services for your farming projects." },
-    { name: "Farm Labour", image: images.labour, description: "Hire skilled labor for all your farming activities." },
+    { name: "Agricultural Consultancies", image: images.consultation, description: "Get expert advice and consultancy services for your farming projects." },
     { name: "Equipment Rental", image: images.equipment, description: "Rent the latest agricultural equipment at affordable rates." },
-    { name: "Pest Control", image: images.pest, description: "Effective pest control solutions to protect your crops." },
-    { name: "Soil Testing", image: images.testing, description: "Professional soil testing services to ensure optimal crop growth." },
     { name: "Irrigation Services", image: images.irrigation, description: "Comprehensive irrigation services to keep your fields well-watered." },
 ];
 
