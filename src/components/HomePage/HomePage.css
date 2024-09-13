@@ -126,10 +126,8 @@ html, body {
 .hero {
     position: relative;
     overflow: hidden;
-    height: 500px; /* height as needed */
-    width: 1050px;
+    height: 700px; /* height as needed */
     margin-top: 20px;
-    margin-left: 145px;
     border-radius: 10px;
 }
 
