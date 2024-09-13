@@ -93,31 +93,19 @@ const HomePage = () => {
                     <div className="dropdown-content">
                         <NavLink to="/workshops" className="dropdown-item">Workshops</NavLink>
                         <NavLink to="/projects" className="dropdown-item">Projects</NavLink>
+                        <NavLink to="/modern-farming" className="dropdown-item">Modern Farming</NavLink>
                         
                     </div>
                 </div>
-                <div className="dropdown">
-                    <NavLink to="/education" className="nav-item" activeClassName="active">Education</NavLink>
-                    <div className="dropdown-content">
-                        <NavLink to="/modern-farming" className="dropdown-item">Modern Farming</NavLink>
-                    </div>
-                </div>
+                
                 <div className="dropdown">
                     <NavLink to="/more-insight" className="nav-item" activeClassName="active">More Insight</NavLink>
                     <div className="dropdown-content">
                         <NavLink to="/reach-us" className="dropdown-item">Reach Us</NavLink>
-                        <NavLink to="/faqs" className="dropdown-item">FAQs</NavLink>
+                        <NavLink to="/contact" className="dropdown-item">Contact</NavLink>
                         <NavLink to="/about" className="dropdown-item">About US</NavLink>
                     </div>
                 </div>
-                <div className="dropdown">
-                    <NavLink to="/pricing" className="nav-item" activeClassName="active">Pricing</NavLink>
-                    <div className="dropdown-content">
-                        <NavLink to="/my-cart" className="dropdown-item">My Cart</NavLink>
-                        <NavLink to="/market-price" className="dropdown-item">Market Price</NavLink>
-                    </div>
-                </div>
-                <NavLink to="/product" className="nav-item" activeClassName="active">Product</NavLink>
             </div>
             <div className="hero">
                 {services.map((service, index) => (

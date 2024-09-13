@@ -10,6 +10,8 @@ import ReachUs from './components/MainContent/ReachUs/ReachUs';
 import Login from './components/Login/Login';
 import ResetPassword from './components/ResetPassword/ResetPassword';
 import ResetConfirmation from './components/ResetConfirmation/ResetConfirmation';
+import About from './components/About/About'; // Update path to About.js
+import Contact from './components/Contact/Contact';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
@@ -25,12 +27,13 @@ function App() {
         <Route path="/donations" element={<Donation />} />
         <Route path="/thank-you" element={<ThankYou />} />
         <Route path="/reach-us" element={<ReachUs />} />
+        <Route path="/about" element={<About />} /> {/* Route for About */}
         <Route path="/reset" element={<ResetPassword />} />
         <Route path="/reset-confirmation" element={<ResetConfirmation />} />
+        <Route path="/contact" element={<Contact />} /> 
       </Routes>
     </Router>
   );
 }
 
 export default App;
-

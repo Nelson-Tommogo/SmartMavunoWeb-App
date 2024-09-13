@@ -39,6 +39,7 @@ import thomas from './thomas-removebg-preview.png';
 import cynthia from './cynthia-removebg-preview.png';
 import reach from './reach.png';
 import confirmation from './confirmation.png';
+import about from './about.jpeg';
 
 const images = {
   main,
@@ -79,7 +80,8 @@ const images = {
   thomas,
   cynthia,
   reach,
-  confirmation
+  confirmation,
+  about
   
 };
 

@@ -126,8 +126,11 @@ html, body {
 .hero {
     position: relative;
     overflow: hidden;
-    height: 700px; /* Adjust height as needed */
+    height: 500px; /* height as needed */
+    width: 1050px;
     margin-top: 20px;
+    margin-left: 145px;
+    border-radius: 10px;
 }
 
 .hero-slide {
@@ -410,5 +413,3 @@ html, body {
     color: green; /* Adjust testimonial name color */
     margin-bottom: 0;
 }
-
-
