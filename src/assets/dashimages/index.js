@@ -13,13 +13,14 @@ import donation from './donation.png';
 import thankyou from './thankyou.png';
 import logo from './logo.png';
 import profile from './profile-picture.png';
-import Consultancies from './Consultancies.jpg';
+
+import consultation from './consultation.jpg';
 import equipment from './equipment.jpg';
 import irrigation from './irrigation.jpg';
-import labour from './labour.jpg';
-import lease from './lease.jpeg';
-import pest from './pest-control.jpg';
-import testing from './soil-testing.jpg';
+
+import lease from './lease.jpg';
+
+
 import cabbage from './cabbage.jpg';
 import chickens from './chickens.jpg';
 import dripirrigation from './dripirrigation.jpg';
@@ -55,13 +56,12 @@ const images = {
   expense,
   logo,
   profile,
-  Consultancies,
+
+  consultation,
   equipment,
   irrigation,
-  labour,
   lease,
-  pest,
-  testing,
+  
   cabbage,
   chickens,
   dripirrigation,
