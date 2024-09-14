@@ -1,0 +1,112 @@
+/* ModernFarming.css */
+
+/* General Styles */
+.modern-farming {
+    font-family: Arial, sans-serif;
+}
+
+
+/* Other Styles */
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.top-container {
+    padding: 20px;
+    text-align: center;
+    margin-top: -300px;
+}
+
+.middle-container,
+.middle2-container,
+.middle3-container {
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.profile {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column; /* Keep elements like heading and paragraph stacked vertically */
+   
+}
+.profile img {
+    width: 30%; /* Each image will take up 30% of the container */
+    border-radius: 8px;
+    margin-right: 10px; /* Add spacing between the images */
+}
+
+.profile img:last-child {
+    margin-right: 0; /* Remove margin on the last image */
+}
+
+.profile .image-group {
+    display: flex;
+    justify-content: space-between; /* Space the images evenly */
+    margin-bottom: 20px; /* Add space between images and the text below */
+}
+
+
+.bar-container {
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.skills {
+    padding: 20px;
+}
+
+.bar {
+    height: 20px;
+    background-color: #ddd;
+}
+
+#Rate-bar,
+#NR-bar {
+    height: 100%;
+    width: 68%; /* Adjust as needed */
+    background-color: green;
+}
+
+#NR-bar {
+    width: 97%; /* Adjust as needed */
+}
+
+.last-container {
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.last-btn {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+.last-btn:hover {
+    text-decoration: underline;
+}
+
+/* Button Styles */
+.learn-more {
+    display: inline-block;
+    background-color: #729343; /* Seaweed background color */
+    color: white; /* White text color */
+    padding: 10px 20px; /* Padding around the text */
+    text-align: center; /* Center text */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners */
+    font-weight: bold; /* Bold text */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+    width: 200px;
+}
+
+.learn-more:hover {
+    background-color: #5a7729; /* Darker seaweed on hover */
+}
+
