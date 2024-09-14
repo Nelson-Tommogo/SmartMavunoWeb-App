@@ -42,6 +42,16 @@ import reach from './reach.png';
 import confirmation from './confirmation.png';
 import about from './about.jpeg';
 
+import modern1 from './modern1.jpeg';
+import modern2 from './modern2.jpeg';
+import modern3 from './modern3.jpeg';
+import modern4 from './modern4.jpeg';
+import modern5 from './modern5.jpeg';
+import modern6 from './modern6.jpeg';
+import modern7 from './modern7.jpeg';
+import modern8 from './modern8.jpeg';
+import modern9 from './modern9.jpeg';
+
 const images = {
   main,
   nav,
@@ -81,7 +91,17 @@ const images = {
   cynthia,
   reach,
   confirmation,
-  about
+  about,
+
+  modern1,
+  modern2,
+  modern3,
+  modern4,
+  modern5,
+  modern6,
+  modern7,
+  modern8,
+  modern9,
   
 };
 
