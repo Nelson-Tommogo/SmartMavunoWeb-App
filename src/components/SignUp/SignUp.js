@@ -1,7 +1,7 @@
-// SignUp.js
-
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { createUserWithEmailAndPassword } from 'firebase/auth'; // Import Firebase function
+import { auth } from '../../firebase'; // Adjust the import path as needed
 import './SignUp.css'; // Import SignUp.css for styling
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import images from '../../assets/dashimages'; // Import images
@@ -9,6 +9,11 @@ import images from '../../assets/dashimages'; // Import images
 function SignUp() {
   const [password, setPassword] = useState('');
   const [showPassword, setShowPassword] = useState(false);
+  const [email, setEmail] = useState('');
+  const [firstName, setFirstName] = useState('');
+  const [lastName, setLastName] = useState('');
+  const [message, setMessage] = useState('');
+  const [isDialogOpen, setIsDialogOpen] = useState(false);
   const navigate = useNavigate();
 
   const criteria = {
@@ -32,6 +37,23 @@ function SignUp() {
     navigate('/login'); // Navigate to the Login page
   };
 
+  const handleSignUp = async (e) => {
+    e.preventDefault();
+    try {
+      await createUserWithEmailAndPassword(auth, email, password);
+      setMessage('Sign-up successful!'); // Success message
+    } catch (error) {
+      setMessage(`Error: ${error.message}`); // Display error message
+    } finally {
+      setIsDialogOpen(true); // Show dialog box
+    }
+  };
+
+  const closeDialog = () => {
+    setIsDialogOpen(false);
+    setMessage('');
+  };
+
   return (
     <div className="sign-up-page">
       <div className="logo-container">
@@ -39,18 +61,23 @@ function SignUp() {
       </div>
       <div className="sign-up-container">
         <h2 className="sign-up-title">Sign Up</h2>
-        <form>
+        <form onSubmit={handleSignUp}>
           <div className="form-group">
-            <label htmlFor="firstName">First Name <span className="login-link">Already have an account? <a href="/login" onClick={handleLoginClick}>Log in</a></span></label>
-            <input type="text" id="firstName" placeholder="Faith" />    
+            <label htmlFor="firstName">
+              First Name 
+              <span className="login-link">
+                Already have an account? <a href="/login" onClick={handleLoginClick}>Log in</a>
+              </span>
+            </label>
+            <input type="text" id="firstName" placeholder="Faith" value={firstName} onChange={(e) => setFirstName(e.target.value)} />    
           </div>
           <div className="form-group">
             <label htmlFor="lastName">Last Name</label>
-            <input type="text" id="lastName" placeholder="Nkatha" />
+            <input type="text" id="lastName" placeholder="Nkatha" value={lastName} onChange={(e) => setLastName(e.target.value)} />
           </div>
           <div className="form-group">
             <label htmlFor="email">Email</label>
-            <input type="email" id="email" placeholder="@smartmavuno@gmail.com" />
+            <input type="email" id="email" placeholder="@smartmavuno@gmail.com" value={email} onChange={(e) => setEmail(e.target.value)} />
           </div>
           <div className="form-group">
             <label htmlFor="password">Password</label>
@@ -107,9 +134,18 @@ function SignUp() {
           SHOP NOW <i className="fas fa-arrow-right"></i>
         </button>
       </div>
+
+      {/* Dialog Box */}
+      {isDialogOpen && (
+        <div className="dialog-box">
+          <div className="dialog-content">
+            <p>{message}</p>
+            <button onClick={closeDialog} className="close-button">Close</button>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
 
 export default SignUp;
-

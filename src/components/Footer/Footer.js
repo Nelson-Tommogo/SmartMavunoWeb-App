@@ -8,25 +8,22 @@ function Footer() {
   return (
     <div className="footer-container">
       <div className="newsletter-section">
-        <img src= {images.smart} alt="Newsletter" className="newsletter-image" />
+        <img src={images.smart} alt="Newsletter" className="newsletter-image" />
         <div className="vertical-line"></div>
         <div className="newsletter-content">
           <p>Subscribe to our newsletter to get our updates and recommendations</p>
           <div className="input-icon-wrapper">
             <i className="fas fa-envelope email-icon"></i>
             <input type="email" placeholder="Enter your email" className="newsletter-input" />
-            
             <button className="subscribe-button">Subscribe</button>
           </div>
-          
         </div>
       </div>
-      
 
       <div className="footer-main">
         <div className="footer-section">
           <h4>Download our app Today.</h4>
-          <img src= {images.footer} alt="Download on Google Play" className="app-download"/>
+          <img src={images.footer} alt="Download on Google Play" className="app-download" />
         </div>
 
         <div className="footer-section">
@@ -52,17 +49,33 @@ function Footer() {
           <ul>
             <li>Download App</li>
             <li>Shop now</li>
-            <li>Donation Busket</li>
+            <li>Donation Basket</li>
           </ul>
         </div>
 
         <div className="footer-section">
           <h4>Follow our socials</h4>
           <ul className="social-links">
-            <li><i className="fab fa-xing"></i> smartmavuno</li>
-            <li><i className="fab fa-instagram"></i> smartmavuno</li>
-            <li><i className="fab fa-linkedin"></i> smartmavuno</li>
-            <li><i className="fab fa-facebook"></i> smartmavuno</li>
+          <li>
+  <a href="https://x.com/SmartMavuno" target="_blank" rel="noopener noreferrer">
+    <i className="fab fa-twitter"></i> smartmavuno
+  </a>
+</li>
+            <li>
+              <a href="https://www.instagram.com/smartmavuno?igsh=MTRhZHUzcXBseHlhaQ==" target="_blank" rel="noopener noreferrer">
+                <i className="fab fa-instagram"></i> smartmavuno
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/company/smartmavuno" target="_blank" rel="noopener noreferrer">
+                <i className="fab fa-linkedin"></i> smartmavuno
+              </a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/profile.php?id=100089102720769&mibextid=ZbWKwL" target="_blank" rel="noopener noreferrer">
+                <i className="fab fa-facebook"></i> smartmavuno
+              </a>
+            </li>
           </ul>
         </div>
       </div>

@@ -16,11 +16,11 @@ const services = [
 
 const features = [
     { name: "Weather Report", icon: faSun, link: "https://smartmvua-forecast.netlify.app", description: "View weather forecasts for your farming activities." },
-    { name: "Education", icon: faGraduationCap, link: "/education", description: "Explore educational resources on modern farming techniques." },
-    { name: "Price and Info", icon: faChartLine, link: "/pricing", description: "Access market prices and agricultural information." },
-    { name: "Projects", icon: faProjectDiagram, link: "/projects", description: "Manage and track your farming projects." },
-    { name: "Feedbacks", icon: faComments, link: "/feedbacks", description: "Provide feedback and view customer reviews." },
-    { name: "Market Insight", icon: faDollarSign, link: "/market-insight", description: "Gain insights into market trends and analysis." },
+    { name: "Farmers Hub", icon: faGraduationCap, link: "/education", description: "Explore educational resources on modern farming techniques." },
+    { name: "Farm Labour", icon: faChartLine, link: "/pricing", description: "Access market prices and agricultural information." },
+    { name: "Food Donation", icon: faProjectDiagram, link: "/projects", description: "Manage and track your farming projects." },
+    { name: "SmartMavuno IoT", icon: faComments, link: "/feedbacks", description: "Provide feedback and view customer reviews." },
+    { name: "Market Place", icon: faDollarSign, link: "/market-insight", description: "Gain insights into market trends and analysis." },
 ];
 
 const latestItems = [
@@ -39,12 +39,12 @@ const latestItems = [
 
 // Testimonial data
 const testimonials = [
-    { name: "Kevin", image: images.kevin, text: "SmartMavuno transformed my farming journey with its seamless integration of essential services like soil testing and pest control. Now, I farm with confidence knowing I have the right support at every step" },
-    { name: "Martha", image: images.martha, text: "Thanks to SmartMavuno, I no longer worry about finding reliable equipment rental or agricultural consultancy. Their platform simplifies these services, allowing me to focus more on growing my crops." },
-    { name: "David", image: images.david, text: "SmartMavuno's dedication to connecting farmers to markets and fostering community among agricultural peers is unparalleled. They've created a platform that not only boosts productivity but also encourages collaboration." },
-    { name: "Mitchel", image: images.mitchel, text: "Using SmartMavuno for irrigation schemes and land leasing has been a game-changer for my farm. I've seen significant improvements in efficiency and yield, all while saving time and resources." },
-    { name: "Thomas", image: images.thomas, text: "I highly recommend SmartMavuno to any farmer serious about maximizing their agricultural potential. Their comprehensive services and market connections have been essential to my farm's success" },
-    { name: "Cynthia", image: images.cynthia, text: "SmartMavuno isn't just a software—it's a lifeline for farmers. From pest control to market connections, they've thought of everything. It's the partner every modern farmer needs." },
+    { name: "Jesse Jacktone", image: images.kevin, text: "SmartMavuno transformed my farming journey with its seamless integration of essential services like soil testing and pest control. Now, I farm with confidence knowing I have the right support at every step" },
+    { name: "Kevin Otieno", image: images.martha, text: "Thanks to SmartMavuno, I no longer worry about finding reliable equipment rental or agricultural consultancy. Their platform simplifies these services, allowing me to focus more on growing my crops." },
+    { name: "Spencer Aloyce", image: images.david, text: "SmartMavuno's dedication to connecting farmers to markets and fostering community among agricultural peers is unparalleled. They've created a platform that not only boosts productivity but also encourages collaboration." },
+    { name: "Victoria Anyango", image: images.mitchel, text: "Using SmartMavuno for irrigation schemes and land leasing has been a game-changer for my farm. I've seen significant improvements in efficiency and yield, all while saving time and resources." },
+    { name: "Lucy Waithera", image: images.thomas, text: "I highly recommend SmartMavuno to any farmer serious about maximizing their agricultural potential. Their comprehensive services and market connections have been essential to my farm's success" },
+    { name: "Cynthia Kinyaa", image: images.cynthia, text: "SmartMavuno isn't just a software—it's a lifeline for farmers. From pest control to market connections, they've thought of everything. It's the partner every modern farmer needs." },
 ];
 
 const HomePage = () => {
