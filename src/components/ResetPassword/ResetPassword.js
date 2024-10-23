@@ -6,6 +6,7 @@ import logo from '../../assets/logo-color.png';
 const ResetPassword = () => {
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
+  const [isDialogOpen, setIsDialogOpen] = useState(false);
   const navigate = useNavigate();
 
   const handleEmailChange = (e) => {
@@ -14,9 +15,16 @@ const ResetPassword = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Here, you would typically send a request to your server to initiate the password reset process
+    // Simulating a password reset action. Replace this with actual Firebase functionality.
     setMessage('If this email is registered, a password reset link will be sent.');
-    navigate('/reset-confirmation', { state: { email } });
+    setIsDialogOpen(true);
+    // Optionally, navigate to a confirmation page or another action
+  };
+
+  const closeDialog = () => {
+    setIsDialogOpen(false);
+    setMessage('');
+    navigate('/login'); // Navigate to login after closing the dialog
   };
 
   return (
@@ -47,9 +55,16 @@ const ResetPassword = () => {
           <span>Return to <Link to="/login" className="login-link">Login</Link></span>
         </p>
       </div>
+      {isDialogOpen && (
+        <div className="dialog-box">
+          <div className="dialog-content">
+            <p>{message}</p>
+            <button onClick={closeDialog} className="close-button">Close</button>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
 
 export default ResetPassword;
-

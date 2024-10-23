@@ -1,0 +1,42 @@
+.product-ads {
+    text-align: center;
+    padding: 2rem;
+    background-color: #dbdbdb; /* Dark background */
+    border-radius: 10px; /* Rounded corners for the container */
+    width: 200%; /* Define a width for the container */
+    max-width: 2200px; /* Max width for larger screens */
+    margin: 0 auto; /* Center the container */
+}
+
+.ads-container {
+    display: flex; /* Use flexbox for horizontal alignment */
+    justify-content: center; /* Center the items */
+    overflow-x: auto; /* Allow horizontal scrolling if necessary */
+    padding: 1rem 0; /* Optional: Padding around the items */
+}
+
+.ad-item {
+    margin: 1rem;
+    width: 200px; /* Fixed width for uniformity */
+    transition: transform 0.3s; /* Optional: Transition for hover effect */
+}
+
+.ad-item:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+.ad-image {
+    max-width: 100%; /* Ensure images fit within their container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional: Rounded corners for images */
+}
+
+h2 {
+    margin-bottom: 1.5rem;
+    color: #ffffff; /* Change heading color for better visibility */
+}
+
+.ad-item p { /* Add this to style the text inside the ad items */
+    color: #000000; /* Set text color to black */
+    margin: 0.5rem 0; /* Optional: Adjust margin for spacing */
+}

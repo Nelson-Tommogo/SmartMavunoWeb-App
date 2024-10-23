@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 50px; /* Adjusted width */
+  width: 30px; /* Adjusted width */
   margin: 20px auto; /* Center the form and add some margin */
   border-radius: 20px;
 }

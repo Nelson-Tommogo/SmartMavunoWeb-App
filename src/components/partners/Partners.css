@@ -1,0 +1,53 @@
+.partners {
+    text-align: center;
+    padding: 2rem;
+    background-color: #dbdbdb; /* Light background */
+}
+
+.partners-container {
+    display: flex;
+    justify-content: center; /* Center the items */
+    flex-wrap: nowrap; /* Prevent wrapping */
+    overflow-x: auto; /* Enable horizontal scrolling */
+    max-width: 1200px; /* Optional: Max width for the container */
+    margin: 0 auto; /* Center the container */
+    gap: 1rem; /* Space between partner items */
+}
+
+.partner-item {
+    flex: 0 0 auto; /* Prevent flex items from shrinking */
+    text-align: center; /* Center text */
+}
+
+.partner-logo-container {
+    background: #fff; /* White background for each logo container */
+    border-radius: 8px; /* Rounded corners */
+    padding: 1rem; /* Space inside the container */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+    transition: transform 0.3s; /* Smooth transition for hover effect */
+}
+
+.partner-logo-container:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+.partner-logo {
+    max-width: 100px; /* Set a max width for logos */
+    height: auto; /* Maintain aspect ratio */
+}
+
+h2 {
+    margin-bottom: 1.5rem;
+}
+
+/* Optional: Add media queries for responsiveness */
+@media (max-width: 768px) {
+    .partners-container {
+        flex-direction: column; /* Stack items on smaller screens */
+        align-items: center; /* Center items */
+    }
+    
+    .partner-logo-container {
+        width: 90%; /* Full width on small screens */
+    }
+}
