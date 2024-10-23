@@ -1,0 +1,48 @@
+.company-impact {
+    text-align: center;
+    padding: 2rem;
+    background-color: #f9f9f9; /* Light background */
+}
+
+.impact-container {
+    display: flex;
+    justify-content: center; /* Center the items */
+    flex-wrap: wrap; /* Allow items to wrap */
+    max-width: 1200px; /* Optional: Max width for the container */
+    margin: 0 auto; /* Center the container */
+}
+
+.impact-item {
+    margin: 1rem;
+    padding: 1rem;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 200px; /* Fixed width for uniformity */
+    transition: transform 0.3s; /* Optional: Transition for hover effect */
+}
+
+.impact-item:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+.impact-icon {
+    font-size: 2rem;
+    color: #4CAF50; /* Primary color */
+}
+
+h2 {
+    margin-bottom: 1.5rem;
+}
+
+/* Optional: Add media queries for responsiveness */
+@media (max-width: 768px) {
+    .impact-container {
+        flex-direction: column; /* Stack items on smaller screens */
+        align-items: center; /* Center items */
+    }
+    
+    .impact-item {
+        width: 90%; /* Full width on small screens */
+    }
+}

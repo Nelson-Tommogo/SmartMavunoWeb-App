@@ -2,6 +2,7 @@
 
 .footer-container {
   padding: 20px;
+  background-color: green;
 }
 
 .newsletter-section {
@@ -22,7 +23,7 @@
 }
 
 .newsletter-image {
-  width: 100px;
+  width: 60px;
   height: auto;
   margin-right: 20px;
 }
@@ -146,3 +147,41 @@
 .app-download {
   width: 150px;
 }
+.footer-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-section li {
+  display: flex;
+  align-items: center;
+  margin: 5px 0;
+}
+
+.footer-section li .link-icon {
+  margin-right: 8px; /* Space between icon and link text */
+}
+
+.footer-section li a {
+  text-decoration: none;
+  color: inherit; /* Adjust this to match your theme */
+}
+
+.footer-section li a:hover {
+  text-decoration: underline; /* Adds underline on hover */
+}
+.social-links {
+  display: flex;
+  justify-content: space-around; /* Distributes icons evenly */
+}
+
+.social-links li {
+  margin: 0 10px; /* Space between icons */
+}
+
+.social-links a {
+  color: inherit; /* Use current text color */
+  font-size: 24px; /* Adjust size as needed */
+}
+
+

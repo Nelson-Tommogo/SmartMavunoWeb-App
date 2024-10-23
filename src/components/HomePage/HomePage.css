@@ -20,6 +20,7 @@ html, body {
     margin: 10px 20px; /* Reduced margin top and bottom */
     margin-top: -50px;
     display: flex;
+    height: 60%;
     justify-content: space-between;
     align-items: center;
 }
@@ -378,7 +379,7 @@ html, body {
     flex-direction: column; /* Arrange content in a column */
     align-items: center; /* Center align items */
     padding: 20px;
-    min-width: 250px; /* Adjust minimum width of each testimonial item */
+    min-width: 450px; /* Adjust minimum width of each testimonial item */
 }
 
 .testimonial-item:first-child {
@@ -414,4 +415,53 @@ html, body {
     font-size: 1.5rem;
     color: green; /* Adjust testimonial name color */
     margin-bottom: 0;
+}
+.navigation-container {
+    background-color: #181717; /* Deep gray background */
+    padding: 15px 0; /* Vertical padding for spacing */
+    text-align: center; /* Center align items */
+}
+
+.navigation-bar {
+    display: inline-block; /* Center the navigation bar */
+}
+
+.nav-item {
+    color: rgb(9, 131, 64); /* Change text color to white for contrast */
+    margin: 0 15px; /* Add horizontal spacing between items */
+    text-decoration: none; /* Remove underline */
+}
+
+.nav-item:hover {
+    text-decoration: underline; /* Underline on hover for feedback */
+}
+.hero-navigation {
+    display: flex;
+    justify-content: space-between; /* Space out items */
+    align-items: center;
+    position: relative; /* Positioning for the pause button */
+    margin-top: 20px; /* Adjust as necessary */
+}
+
+.circle-button {
+    width: 50px; /* Diameter of the circle */
+    height: 50px;
+    border-radius: 50%; /* Makes the button circular */
+    background-color: rgba(255, 255, 255, 0.8); /* Light background for visibility */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer; /* Cursor changes to pointer on hover */
+    transition: background-color 0.3s; /* Smooth background change */
+}
+
+.circle-button:hover {
+    background-color: rgba(255, 255, 255, 1); /* Darker on hover */
+}
+
+.pause-button {
+    position: absolute; /* Centered position */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust to truly center */
+    background-color: rgba(47, 112, 185, 0.8); /* Different color for pause */
 }

@@ -15,6 +15,9 @@ import Contact from './components/Contact/Contact';
 import ModernFarming from './components/ModernFarming/ModernFarming';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
+import WorkShopPage from './components/workshops/workshop';
+import ProjectsPage from './components/projects/project'; 
+
 
 function App() {
   return (
@@ -33,6 +36,8 @@ function App() {
         <Route path="/reset-confirmation" element={<ResetConfirmation />} />
         <Route path="/contact" element={<Contact />} /> 
         <Route path="/modern-farming" element={<ModernFarming />} /> 
+        <Route path="/workshops" element={<WorkShopPage />} /> 
+        <Route path="/project" element={<ProjectsPage />} /> 
       </Routes>
     </Router>
   );

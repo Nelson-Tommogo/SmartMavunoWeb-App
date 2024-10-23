@@ -69,7 +69,7 @@ const ModernFarming = () => {
                         <br />
                         Smart irrigation systems can optimize water levels based on things such as soil moisture and weather predictions. This is done with wireless moisture sensors that communicate with the smart irrigation controls and help inform the system whether or not the landscape is in need of water.
                     </p>
-                    <a href="https://www.agritechtomorrow.com/tag/irrigation" target="_blank" rel="noopener noreferrer" className="learn-more">Learn More</a>
+                    <a href="https://www.smartmavuno.africa" target="_blank" rel="noopener noreferrer" className="learn-more">Learn More</a>
                 </div>
             </div>
 
@@ -154,7 +154,7 @@ const ModernFarming = () => {
             <div className="last-container">
                 <div className="profile">
                     <p>
-                        If you want to learn more about modern technology in farming:
+                       Get Your First SmartMavuno Smart Devices NOW and ENjoy the Value of Modern and Remote Farming!!:
                         <a className="last-btn" href="https://www.plugandplaytechcenter.com/insights/new-agriculture-technology-modern-farming" target="_blank" rel="noopener noreferrer">Click here</a>
                     </p>
                 </div>
