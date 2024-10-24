@@ -82,7 +82,7 @@ const About = () => {
         {/* Smart Mavuno at the core */}
         <div className="team-core">
             <img src={images.logo} alt="Smart Mavuno" className="team-core-logo" />
-            <p>Smart Mavuno</p>
+            <p>SmartMavuno</p>
         </div>
 
         {/* Arrows originating from Smart Mavuno */}

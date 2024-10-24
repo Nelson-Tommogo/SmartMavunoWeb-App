@@ -41,4 +41,4 @@ const WorkshopPage = () => {
   );
 };
 
-export default WorkshopPage; // Make sure this line is present
+export default WorkshopPage; 
