@@ -5,8 +5,7 @@
     font-family: Arial, sans-serif;
 }
 
-
-/* Other Styles */
+/* Top Bar Styles */
 .top-bar {
     display: flex;
     justify-content: space-between;
@@ -14,6 +13,42 @@
     padding: 10px;
 }
 
+/* Navigation Styles */
+.navigation-container {
+    background-color: #f8f9fa; /* Light background for navigation */
+    padding: 10px 20px; /* Padding for navigation */
+}
+
+.navigation-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Space items evenly */
+}
+
+.nav-item {
+    margin: 0 15px; /* Spacing between nav items */
+    text-decoration: none;
+    color: #333; /* Text color */
+    position: relative; /* For dropdown positioning */
+}
+
+.dropdown {
+    position: relative; /* For dropdown positioning */
+}
+
+.dropdown-content {
+    display: none; /* Hide dropdowns initially */
+    position: absolute;
+    background-color: white;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block; /* Show dropdown on hover */
+}
+
+/* Main Content Styles */
 .top-container {
     padding: 20px;
     text-align: center;
@@ -33,9 +68,9 @@
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     display: flex;
-    flex-direction: column; /* Keep elements like heading and paragraph stacked vertically */
-   
+    flex-direction: column; /* Stack elements vertically */
 }
+
 .profile img {
     width: 30%; /* Each image will take up 30% of the container */
     border-radius: 8px;
@@ -49,10 +84,10 @@
 .profile .image-group {
     display: flex;
     justify-content: space-between; /* Space the images evenly */
-    margin-bottom: 20px; /* Add space between images and the text below */
+    margin-bottom: 20px; /* Space between images and text below */
 }
 
-
+/* Bar Container Styles */
 .bar-container {
     padding: 20px;
     background-color: #f4f4f4;
@@ -70,14 +105,18 @@
 #Rate-bar,
 #NR-bar {
     height: 100%;
-    width: 68%; /* Adjust as needed */
     background-color: green;
+}
+
+#Rate-bar {
+    width: 68%; /* Adjust as needed */
 }
 
 #NR-bar {
     width: 97%; /* Adjust as needed */
 }
 
+/* Last Container Styles */
 .last-container {
     padding: 20px;
     background-color: #f4f4f4;
@@ -109,4 +148,3 @@
 .learn-more:hover {
     background-color: #5a7729; /* Darker seaweed on hover */
 }
-
