@@ -274,20 +274,17 @@ html, body {
   
   /* Latest Section */
   .latest-section {
-      padding: 50px 0;
-      margin-top: 20px; /* Adjust as needed */
-      margin-bottom: 20px; /* Adjust as needed */
-      background-color: #f9f9f9; /* Light grey background */
-  }
-  
-  .latest-section h2 {
-      font-size: 3.5rem;
-      color: green;
-      text-align: left;
-      margin-bottom: 30px;
-      text-decoration: underline;
-      font-family: Arial, sans-serif;
-  }
+    text-align: center; /* Center text within the section */
+    margin-bottom: 20px; /* Space below the section */
+}
+
+.latest-heading {
+    margin-bottom: 20px; /* Space below the heading */
+    font-size: 2rem; /* Adjust font size as needed */
+    color: #333; /* Change color as needed */
+}
+
+
   
   .latest-container {
       display: flex;
@@ -493,5 +490,6 @@ html, body {
 .signup-button:hover, .login-button:hover {
     background-color: #45a049; /* Darker green on hover */
 }
+
 
   

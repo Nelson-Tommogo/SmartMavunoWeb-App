@@ -151,7 +151,7 @@ const HomePage = () => {
                 </div>
             </div>
 
-            <div className="features-section">
+<div className="features-section">
     <h2>Features</h2>
     <p className="features-description">What our customers and clients will get:</p>
     <div className="container">
@@ -178,22 +178,22 @@ const HomePage = () => {
             <CompanyImpact />
 
             <div className="latest-section">
-                <div className="container">
-                    <h2>Latest!</h2>
-                    <div className="latest-container">
-                        {latestItems.map((item, index) => (
-                            <div key={index} className="latest-item">
-                                <img src={item.image} alt={item.name} className="latest-image" />
-                                <div className="latest-info">
-                                    <h5>{item.name}</h5>
-                                    <p>{item.serviceType}</p>
-                                </div>
-                            </div>
-                        ))}
+    <h2 className="latest-heading">Latest!</h2> {/* Centered heading */}
+    <div className="container">
+        <div className="latest-container">
+            {latestItems.map((item, index) => (
+                <div key={index} className="latest-item">
+                    <img src={item.image} alt={item.name} className="latest-image" />
+                    <div className="latest-info">
+                        <h5>{item.name}</h5>
+                        <p>{item.serviceType}</p>
                     </div>
                 </div>
-            </div>
-            
+            ))}
+        </div>
+    </div>
+</div>
+
             {/* Testimonials section */}
             <div className="testimonials-section">
                 <h2>Testimonials</h2>
