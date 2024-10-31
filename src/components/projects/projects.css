@@ -1,0 +1,121 @@
+.projects-page {
+    padding: 20px;
+    background-color: #f9f9f9; /* Light background for the entire page */
+}
+
+.container {
+    max-width: 1200px; /* Limit the width of the container */
+    margin: 0 auto; /* Center the container */
+    padding: 0 20px; /* Padding for small screens */
+}
+
+h1 {
+    text-align: center;
+    color: #4CAF50; /* Green color for main heading */
+    margin-bottom: 30px;
+}
+
+.workshop-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px; /* Space between project cards */
+    justify-items: center; /* Center items in each grid cell */
+}
+
+.project-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 15px;
+    text-align: center;
+    background-color: #fff; /* White background for project cards */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: transform 0.2s; /* Smooth hover effect */
+}
+
+.project-card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+}
+
+.project-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0 0; /* Rounded corners for top */
+}
+
+.project-title {
+    font-size: 1.5rem;
+    color: #333; /* Darker color for titles */
+    margin: 15px 0 10px; /* Margin around titles */
+}
+
+.project-description {
+    font-size: 1rem;
+    color: #666; /* Lighter color for descriptions */
+    margin-bottom: 15px; /* Space below descriptions */
+}
+
+.participate-button {
+    background-color: #4CAF50; /* Green background */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s; /* Smooth background change */
+}
+
+.participate-button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+.button-container {
+    display: flex;
+    justify-content: center; /* Center buttons */
+    gap: 10px; /* Space between buttons */
+    margin-top: 10px; /* Space above buttons */
+}
+
+.watch-button {
+    text-decoration: none; /* Remove underline from links */
+    flex: 1; /* Allow buttons to grow */
+}
+
+.testimonial {
+    font-style: italic;
+    color: #555; /* Gray color for testimonials */
+    margin-top: 10px;
+    border-top: 1px solid #ddd; /* Separator line above testimonial */
+    padding-top: 10px; /* Padding for space above testimonial */
+}
+
+.previous-projects {
+    margin-top: 40px; /* Space above previous projects section */
+    padding: 20px;
+    border-top: 2px solid #ddd; /* Separator line */
+    background-color: #e9f7ef; /* Light background for previous projects */
+    max-width: 800px; /* Limit the width of the section */
+    margin-left: auto; /* Center the section */
+    margin-right: auto; /* Center the section */
+    border-radius: 8px; /* Rounded corners */
+    text-align: center; /* Center text */
+}
+
+.previous-project-card {
+    background-color: #fff; /* White background for previous project cards */
+    padding: 15px;
+    margin-top: 10px; /* Space between previous project cards */
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.previous-project-title {
+    font-size: 1.5rem;
+    color: #4CAF50; /* Green color for titles */
+}
+
+.previous-project-description {
+    font-size: 1rem;
+    color: #666; /* Lighter color for descriptions */
+}

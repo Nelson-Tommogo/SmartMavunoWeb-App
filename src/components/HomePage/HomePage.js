@@ -4,7 +4,6 @@ import { NavLink } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSun, faGraduationCap, faChartLine, faComments, faDollarSign, faProjectDiagram, faQuoteLeft, faPause, faPlay } from '@fortawesome/free-solid-svg-icons';
 import images from '../../assets/dashimages';
-import Header from '../Header/header';
 import Footer from '../Footer/Footer';
 import CompanyImpact from '../CompanyImpact/ CompanyImpact';
 import Partners from '../partners/Partners';
@@ -21,11 +20,11 @@ const services = [
 
 const features = [
     { name: "Weather Report", icon: faSun, link: "https://smartmvua-forecast.netlify.app", description: "View weather forecasts for your farming activities." },
-    { name: "Farmers Hub", icon: faGraduationCap, link: "/education", description: "Explore educational resources on modern farming techniques." },
+    { name: "Farmers Hub", icon: faGraduationCap, link: "/farmerhub", description: "Explore educational resources on modern farming techniques." },
     { name: "Farm Labour", icon: faChartLine, link: "/pricing", description: "Access market prices and agricultural information." },
-    { name: "Food Donation", icon: faProjectDiagram, link: "/projects", description: "Manage and track your farming projects." },
-    { name: "SmartMavuno IoT", icon: faComments, link: "/feedbacks", description: "Provide feedback and view customer reviews." },
-    { name: "Market Place", icon: faDollarSign, link: "/market-insight", description: "Gain insights into market trends and analysis." },
+    { name: "Food Donation", icon: faProjectDiagram, link: "/donation", description: "Manage and track your farming projects." },
+    { name: "SmartMavuno IoT", icon: faComments, link: "/smartmavunoiot", description: "Provide feedback and view customer reviews." },
+    { name: "Market Place", icon: faDollarSign, link: "/dashboard", description: "Gain insights into market trends and analysis." },
 ];
 
 const latestItems = [
@@ -80,22 +79,13 @@ const HomePage = () => {
 
     return (
         <div className="home-page">
-            <div className="top-bar">
-                <img src={images.logo} alt="Logo" className="logo" />
-                <Header />
-                <div className="buttons">
-                    <NavLink to="/signup" className="green-button">Sign Up</NavLink>
-                    <NavLink to="/login" className="green-button">Login</NavLink>
-                </div>
-            </div>
-
             {/* Navigation Container */}
             <div className="navigation-container"> 
                 <div className="navigation-bar">
                     <div className="dropdown">
                         <NavLink to="#" className="nav-item">Home</NavLink>
                         <div className="dropdown-content">
-                            <NavLink to="/marketplavce" className="dropdown-item">Market Place</NavLink>
+                            <NavLink to="/dashboard" className="dropdown-item">Market Place</NavLink>
                             <NavLink to="/community" className="dropdown-item">Community</NavLink>
                         </div>
                     </div>
@@ -103,8 +93,8 @@ const HomePage = () => {
                     <div className="dropdown">
                         <NavLink to="/market-insight" className="nav-item" activeClassName="active">Resources</NavLink>
                         <div className="dropdown-content">
-                            <NavLink to="/workshops" className="dropdown-item">Workshops</NavLink>
-                            <NavLink to="/projects" className="dropdown-item">Projects</NavLink>
+                            <NavLink to="/project" className="dropdown-item">projects</NavLink>
+                            <NavLink to="/workshops" className="dropdown-item">WorkShops</NavLink>
                             <NavLink to="/modern-farming" className="dropdown-item">Modern Farming</NavLink>
                             <NavLink to="/articles" className="dropdown-item">Articles and Blogs</NavLink>
                         </div>

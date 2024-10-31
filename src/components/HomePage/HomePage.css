@@ -15,7 +15,7 @@ html, body {
 }
 
 .top-bar {
-    background-color: #fff; /* White background */
+    background-color: #ffffff; /* White background */
     padding: 10px 20px;
     margin: 10px 20px; /* Reduced margin top and bottom */
     margin-top: -50px;
@@ -417,17 +417,18 @@ html, body {
     margin-bottom: 0;
 }
 .navigation-container {
-    background-color: #181717; /* Deep gray background */
+    background-color: #4CAF50; /* Change this color to green */
     padding: 15px 0; /* Vertical padding for spacing */
     text-align: center; /* Center align items */
 }
+
 
 .navigation-bar {
     display: inline-block; /* Center the navigation bar */
 }
 
 .nav-item {
-    color: rgb(9, 131, 64); /* Change text color to white for contrast */
+    color: rgb(0, 0, 0); /* Change text color to white for contrast */
     margin: 0 15px; /* Add horizontal spacing between items */
     text-decoration: none; /* Remove underline */
 }
