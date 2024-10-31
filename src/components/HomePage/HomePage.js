@@ -7,9 +7,9 @@ import images from '../../assets/dashimages';
 import Footer from '../Footer/Footer';
 import CompanyImpact from '../CompanyImpact/ CompanyImpact';
 import Partners from '../partners/Partners';
+import logo from '../../assets/logo-no-background.png';
+import { faUserPlus, faSignInAlt } from '@fortawesome/free-solid-svg-icons';
 import ProductAds from '../ProductAds/ProductAds';
-
-
 
 const services = [
     { name: "Land Leasing", image: images.lease, description: "We offer flexible land leasing options to suit your agricultural needs." },
@@ -81,34 +81,49 @@ const HomePage = () => {
         <div className="home-page">
             {/* Navigation Container */}
             <div className="navigation-container"> 
-                <div className="navigation-bar">
-                    <div className="dropdown">
-                        <NavLink to="#" className="nav-item">Home</NavLink>
-                        <div className="dropdown-content">
-                            <NavLink to="/dashboard" className="dropdown-item">Market Place</NavLink>
-                            <NavLink to="/community" className="dropdown-item">Community</NavLink>
-                        </div>
-                    </div>
-                    <a href={features.find(feature => feature.name === "Weather Report").link} className="nav-item">Weather</a>
-                    <div className="dropdown">
-                        <NavLink to="/market-insight" className="nav-item" activeClassName="active">Resources</NavLink>
-                        <div className="dropdown-content">
-                            <NavLink to="/project" className="dropdown-item">projects</NavLink>
-                            <NavLink to="/workshops" className="dropdown-item">WorkShops</NavLink>
-                            <NavLink to="/modern-farming" className="dropdown-item">Modern Farming</NavLink>
-                            <NavLink to="/articles" className="dropdown-item">Articles and Blogs</NavLink>
-                        </div>
-                    </div>
-                    <div className="dropdown">
-                        <NavLink to="/more-insight" className="nav-item" activeClassName="active">More insights</NavLink>
-                        <div className="dropdown-content">
-                            <NavLink to="/reach-us" className="dropdown-item">Reach Us</NavLink>
-                            <NavLink to="/contact" className="dropdown-item">Contact</NavLink>
-                            <NavLink to="/about" className="dropdown-item">About US</NavLink>
-                        </div>
-                    </div>
-                </div>
+    <div className="navigation-bar">
+        <img src={logo}  alt="Logo" className="logo" /> {/* Logo */}
+        
+        <div className="dropdown">
+            <NavLink to="#" className="nav-item">Home</NavLink>
+            <div className="dropdown-content">
+                <NavLink to="/dashboard" className="dropdown-item">Market Place</NavLink>
+                <NavLink to="/community" className="dropdown-item">Community</NavLink>
             </div>
+        </div>
+
+        <a href={features.find(feature => feature.name === "Weather Report").link} className="nav-item">Weather</a>
+
+        <div className="dropdown">
+            <NavLink to="/market-insight" className="nav-item" activeClassName="active">Resources</NavLink>
+            <div className="dropdown-content">
+                <NavLink to="/project" className="dropdown-item">Projects</NavLink>
+                <NavLink to="/workshops" className="dropdown-item">Workshops</NavLink>
+                <NavLink to="/modern-farming" className="dropdown-item">Modern Farming</NavLink>
+                <NavLink to="/articles" className="dropdown-item">Articles and Blogs</NavLink>
+            </div>
+        </div>
+
+        <div className="dropdown">
+            <NavLink to="/more-insight" className="nav-item" activeClassName="active">More Insights</NavLink>
+            <div className="dropdown-content">
+                <NavLink to="/reach-us" className="dropdown-item">Reach Us</NavLink>
+                <NavLink to="/contact" className="dropdown-item">Contact</NavLink>
+                <NavLink to="/about" className="dropdown-item">About Us</NavLink>
+            </div>
+        </div>
+
+        {/* Sign Up and Login Buttons with Icons */}
+        <a href="/signup" className="nav-item signup-button">
+            <FontAwesomeIcon icon={faUserPlus} /> Sign Up
+        </a>
+        <a href="/login" className="nav-item login-button">
+            <FontAwesomeIcon icon={faSignInAlt} /> Login
+        </a>
+    </div>
+</div>
+
+
 
             <div className="hero">
                 {services.map((service, index) => (
@@ -136,49 +151,49 @@ const HomePage = () => {
                 </div>
             </div>
 
-            <div className="features-section">
-                <div className="container">
-                    <h2>Features</h2>
-                    <p className="features-description">What our customers and clients will get:</p>
-                    <div className="row">
-                        {features.map((feature, index) => (
-                            <div key={index} className="col-md-6">
-                                <div className="feature-item">
-                                    <div className="feature-icon">
-                                        <FontAwesomeIcon icon={feature.icon} />
-                                    </div>
-                                    <div className="feature-content">
-                                        <h5><NavLink to={feature.link}>{feature.name}</NavLink></h5>
-                                        <p>{feature.description}</p>
-                                    </div>
-                                </div>
-                            </div>
-                        ))}
+<div className="features-section">
+    <h2>Features</h2>
+    <p className="features-description">What our customers and clients will get:</p>
+    <div className="container">
+        <div className="row">
+            {features.map((feature, index) => (
+                <div key={index} className="feature-item">
+                    <div className="feature-icon">
+                        <FontAwesomeIcon icon={feature.icon} />
+                    </div>
+                    <div className="feature-content">
+                        <h5><NavLink to={feature.link}>{feature.name}</NavLink></h5>
+                        <p>{feature.description}</p>
                     </div>
                 </div>
-            </div>
-            <ProductAds/>
+            ))}
+        </div>
+    </div>
+</div>
 
+
+
+
+            <ProductAds/>
             <CompanyImpact />
 
-            
             <div className="latest-section">
-                <div className="container">
-                    <h2>Latest!</h2>
-                    <div className="latest-container">
-                        {latestItems.map((item, index) => (
-                            <div key={index} className="latest-item">
-                                <img src={item.image} alt={item.name} className="latest-image" />
-                                <div className="latest-info">
-                                    <h5>{item.name}</h5>
-                                    <p>{item.serviceType}</p>
-                                </div>
-                            </div>
-                        ))}
+    <h2 className="latest-heading">Latest!</h2> {/* Centered heading */}
+    <div className="container">
+        <div className="latest-container">
+            {latestItems.map((item, index) => (
+                <div key={index} className="latest-item">
+                    <img src={item.image} alt={item.name} className="latest-image" />
+                    <div className="latest-info">
+                        <h5>{item.name}</h5>
+                        <p>{item.serviceType}</p>
                     </div>
                 </div>
-            </div>
-            
+            ))}
+        </div>
+    </div>
+</div>
+
             {/* Testimonials section */}
             <div className="testimonials-section">
                 <h2>Testimonials</h2>
