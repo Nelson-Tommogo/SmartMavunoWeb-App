@@ -2,17 +2,9 @@ import React from 'react';
 import Footer from '../Footer/Footer'; // Import Footer
 import './ModernFarming.css'; // Import CSS
 import images from '../../assets/dashimages';
-import { faSun, faGraduationCap, faChartLine, faComments, faDollarSign, faProjectDiagram } from '@fortawesome/free-solid-svg-icons';
 import TopBar from '../tobars/topbars';
 
-const features = [
-    { name: "Weather Report", icon: faSun, link: "https://smartmvua-forecast.netlify.app", description: "View weather forecasts for your farming activities." },
-    { name: "Farmers Hub", icon: faGraduationCap, link: "/farmerhub", description: "Explore educational resources on modern farming techniques." },
-    { name: "Farm Labour", icon: faChartLine, link: "/pricing", description: "Access market prices and agricultural information." },
-    { name: "Food Donation", icon: faProjectDiagram, link: "/donation", description: "Manage and track your farming projects." },
-    { name: "SmartMavuno IoT", icon: faComments, link: "/smartmavunoiot", description: "Provide feedback and view customer reviews." },
-    { name: "Market Place", icon: faDollarSign, link: "/marketplace", description: "Gain insights into market trends and analysis." },
-];
+
 
 const ModernFarming = () => {
     return (

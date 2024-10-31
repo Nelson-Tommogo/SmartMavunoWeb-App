@@ -4,7 +4,6 @@ import { NavLink } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSun, faGraduationCap, faChartLine, faComments, faDollarSign, faProjectDiagram, faQuoteLeft, faPause, faPlay } from '@fortawesome/free-solid-svg-icons';
 import images from '../../assets/dashimages';
-import Header from '../Header/header';
 import Footer from '../Footer/Footer';
 import CompanyImpact from '../CompanyImpact/ CompanyImpact';
 import Partners from '../partners/Partners';
