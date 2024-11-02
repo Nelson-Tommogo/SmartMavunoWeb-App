@@ -433,7 +433,7 @@ html, body {
   .navigation-bar {
     display: flex;
     align-items: center;
-    width: 70%;
+    width: 65%;
   }
   
   .nav-item {
