@@ -53,7 +53,6 @@ html, body {
     background-color: rgb(53, 116, 158);
     justify-content: center;
     align-items: center;
-    padding: 8px 16px; /* Reduced padding for compactness */
     border-radius: 15px; /* Rounded corners */
     margin: 0 20px; /* Adjusted margin */
     flex-wrap: nowrap; /* Prevent wrapping of items */
@@ -63,8 +62,8 @@ html, body {
     text-decoration: none;
     color: green; /* Default color for nav items */
     font-size: 14px; /* Slightly reduced font size */
-    transition: color 0.3s ease, background-color 0.3s ease;
-    padding: 4px 6px; /* Reduced padding for items */
+    transition: color 0.3s ease, 
+    background-color 0.3s ease;
     border-radius: 5px;
     display: flex;
     align-items: center; /* Center items vertically */
@@ -439,7 +438,7 @@ html, body {
   .navigation-bar {
     display: flex;
     align-items: center;
-    width: 80%;
+    width: 66%;
   }
   
   .nav-item {
