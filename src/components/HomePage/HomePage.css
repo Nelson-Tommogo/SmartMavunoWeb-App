@@ -426,19 +426,21 @@ html, body {
   }
   
   .navigation-container {
-    background-color: #4CAF50; /* Green background */
-    padding: 5px 10px; /* Vertical and horizontal padding */
-    text-align: center; /* Center align items */
-    width: 100; /* Full width */
-    max-width: 800px; /* Set a max width for better layout control */
-    margin: 0 auto; /* Center the navigation container */
+    display: flex;
+    background-color: rgb(53, 116, 158);
+    justify-content: center;
+    align-items: center;
+    padding: 5px 8px; /* Reduced padding for compactness */
+    border-radius: 15px; /* Rounded corners */
+    margin: 0 20px; /* Adjusted margin */
+    flex-wrap: nowrap; /* Prevent wrapping of items */
 }
 
   
   .navigation-bar {
     display: flex;
     align-items: center;
-    width: 66%;
+    width: 70%;
   }
   
   .nav-item {
