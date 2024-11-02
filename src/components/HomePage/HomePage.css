@@ -67,6 +67,7 @@ html, body {
     padding: 4px 6px; /* Reduced padding for items */
     border-radius: 5px;
     display: flex;
+    max-width: 100%;
     align-items: center; /* Center items vertically */
     margin: 0 2px; /* Reduce spacing between items */
 }
@@ -424,7 +425,7 @@ html, body {
     padding: 5px 10px; /* Vertical and horizontal padding */
     text-align: center; /* Center align items */
     width: 100; /* Full width */
-    max-width: 1200px; /* Set a max width for better layout control */
+    max-width: 800px; /* Set a max width for better layout control */
     margin: 0 auto; /* Center the navigation container */
 }
 
@@ -432,7 +433,7 @@ html, body {
   .navigation-bar {
     display: flex;
     align-items: center;
-    width: 100%;
+    width: 70%;
   }
   
   .nav-item {
@@ -476,7 +477,7 @@ html, body {
       background-color: rgba(47, 112, 185, 0.8); /* Different color for pause */
   }
   .logo {
-    max-width: 80px; /* Adjust size as needed */
+    max-width: 70px; /* Adjust size as needed */
     margin-right: 20px;
      height: auto;
 }
@@ -484,10 +485,9 @@ html, body {
 .signup-button, .login-button {
     background-color: #4CAF50; /* Same green as navigation */
     color: black; /* Black text for buttons */
-    padding: 10px 15px; /* Padding for buttons */
     border-radius: 5px; /* Rounded corners */
     text-decoration: none; /* Remove underline */
-    margin-left: 15px; /* Space between buttons */
+    margin-left: 5px; /* Space between buttons */
     transition: background-color 0.3s; /* Smooth transition */
 }
 
