@@ -1,9 +1,9 @@
 .product-ads {
     text-align: center;
     padding: 2rem;
-    background-color: #dbdbdb; /* Dark background */
+    background-color: #dbdbdb; /* Light grey background */
     border-radius: 10px; /* Rounded corners for the container */
-    width: 200%; /* Define a width for the container */
+    width: 100%; /* Full width for the container */
     max-width: 2200px; /* Max width for larger screens */
     margin: 0 auto; /* Center the container */
 }
@@ -18,7 +18,11 @@
 .ad-item {
     margin: 1rem;
     width: 200px; /* Fixed width for uniformity */
-    transition: transform 0.3s; /* Optional: Transition for hover effect */
+    transition: transform 0.3s; /* Transition for hover effect */
+    background-color: #fff; /* Background for ad items */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 1rem; /* Padding inside ad items */
 }
 
 .ad-item:hover {
@@ -28,15 +32,59 @@
 .ad-image {
     max-width: 100%; /* Ensure images fit within their container */
     height: auto; /* Maintain aspect ratio */
-    border-radius: 8px; /* Optional: Rounded corners for images */
+    border-radius: 8px; /* Rounded corners for images */
 }
 
 h2 {
     margin-bottom: 1.5rem;
-    color: #ffffff; /* Change heading color for better visibility */
+    color: #4CAF50; /* Green color for the heading */
+    font-size: 2rem; /* Increase font size for better visibility */
 }
 
-.ad-item p { /* Add this to style the text inside the ad items */
+.product-info {
+    text-align: left; /* Align text to the left within the ad item */
+}
+
+.product-title {
+    font-size: 1.2rem; /* Title size */
+    margin: 0.5rem 0; /* Space around the title */
+    color: #333; /* Darker color for the title */
+}
+
+.product-price {
+    font-size: 1.1rem; /* Price size */
+    color: #28a745; /* Green color for prices */
+    margin: 0.5rem 0; /* Space around the price */
+}
+
+.add-to-cart {
+    background-color: #4CAF50; /* Green background for button */
+    color: white; /* White text */
+    border: none; /* No border */
+    padding: 10px; /* Button padding */
+    border-radius: 5px; /* Rounded corners for button */
+    cursor: pointer; /* Pointer cursor */
+    transition: background-color 0.3s; /* Smooth transition */
+    width: 100%; /* Full width button */
+}
+
+.add-to-cart:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+.ad-item p {
     color: #000000; /* Set text color to black */
-    margin: 0.5rem 0; /* Optional: Adjust margin for spacing */
+    margin: 0.5rem 0; /* Adjust margin for spacing */
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    .ads-container {
+        flex-direction: column; /* Stack items vertically on small screens */
+        align-items: center; /* Center items */
+    }
+
+    .ad-item {
+        width: 90%; /* Take full width on small screens */
+    }
 }

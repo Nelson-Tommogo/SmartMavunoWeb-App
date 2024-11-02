@@ -1,71 +1,55 @@
-.contactPage {
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
-  margin-top: -400px;
 }
 
-.contactContainer {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  margin-top: -260px;
+.heading {
+  font-size: 28px;
+  margin-bottom: 30px;
+  text-align: center;
 }
 
-.mapSection {
-  margin-bottom: 20px;
+.contact-info {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 40px;
 }
 
-.contactInfo {
+.contact-info > div {
+  flex: 1;
   background-color: #f5f5f5;
   padding: 20px;
+  margin: 0 10px; /* Equal spacing between columns */
   border-radius: 8px;
   text-align: center;
 }
 
-.contactInfo h2 {
-  font-size: 24px;
+.contact-info h3 {
+  font-size: 20px;
   margin-bottom: 10px;
 }
 
-.contactInfo p {
+.contact-info p {
   font-size: 16px;
-  margin-bottom: 20px;
-}
-
-.contactInfo ul {
-  list-style: none;
-  padding: 0;
-}
-
-.contactInfo ul li {
-  font-size: 18px;
-  margin-bottom: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.contactInfo ul li svg {
-  margin-right: 10px;
+  margin: 5px 0;
 }
 
 .contactForm {
+  width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  width: 100%;
 }
 
 .contactForm label {
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   font-size: 16px;
   color: #232323;
-  margin-bottom: 9px;
-  margin-left: 10px;
+  margin-bottom: 5px;
 }
 
 .contactForm input,
@@ -74,97 +58,33 @@
   background-color: #f7f7f7;
   border-radius: 6px;
   border: solid 1px #e8e8e8;
-  margin: 9px 0px 20px;
-  padding-left: 15px;
-  font-family: 'Poppins';
+  margin-bottom: 20px;
+  padding: 15px;
+  font-family: 'Poppins', sans-serif;
   font-size: 16px;
   color: #232323;
-  height: 60px;
 }
 
 .contactForm textarea {
-  height: 183px;
-  padding-top: 15px;
-}
-
-.contactForm input:focus,
-.contactForm textarea:focus {
-  outline: none;
-  border: solid 1px #afacac;
+  height: 183px; /* Consistent height for textarea */
 }
 
 .contactForm button {
-  font-size: 16px;
-  height: 60px;
-  width: 160px;
-  border-radius: 5px !important;
-  margin-top: 37px;
+  height: 50px;
   background-color: #729343;
   color: #fff;
   border: none;
   cursor: pointer;
+  transition: background-color 0.3s;
 }
 
 .contactForm button:hover {
   background-color: #5a7729;
 }
 
-@media (max-width: 1200px) {
-  .heading {
-    font-size: 30px;
-  }
-
-  .head {
-    font-size: 18px;
-    margin-top: 50px;
-  }
-
-  .content {
-    font-size: 18px;
-  }
-
-  .email {
-    font-size: 25px;
-  }
-}
-
-@media (max-width: 768px) {
-  .heading {
-    width: 100%;
-  }
-
-  .head {
-    margin-top: 30px;
-  }
-
-  .contactForm textarea {
-    height: 150px;
-  }
-}
-
-@media (max-width: 600px) {
-  .heading {
-    font-size: 23px;
-  }
-
-  .head {
-    margin-top: 25px;
-    font-size: 16px;
-  }
-
-  .content {
-    font-size: 16px;
-  }
-
-  .label {
-    font-size: 14px;
-  }
-
-  .contactForm input {
-    height: 40px;
-  }
-
-  .contactForm textarea {
-    height: 120px;
-  }
+.map-section {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }

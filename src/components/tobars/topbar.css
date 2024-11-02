@@ -5,22 +5,30 @@
     padding: 10px 20px;
     background-color: #4CAF50; /* Green background */
     color: white; /* White text */
-    margin-top: 20px; /* Add distance from the top */
+    margin: 20px auto; /* Centering the top bar with margin */
+    border-radius: 15px; /* Rounded corners */
+    max-width: 1200px; /* Set a maximum width */
+    width: 100%; /* Full width */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Optional shadow for depth */
 }
 
 .container {
     display: flex;
+    justify-content: space-between; /* Space between logo and nav */
     align-items: center;
     width: 100%;
 }
 
 .logo {
     width: 150px; /* Adjust size as needed */
+    margin-right: auto; /* Push navigation to the right */
 }
 
 .navigation {
     display: flex;
     gap: 20px; /* Space between nav items */
+    justify-content: center; /* Center navigation items */
+    flex-grow: 1; /* Allow navigation to grow */
 }
 
 .nav-item {

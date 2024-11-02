@@ -1,13 +1,11 @@
 import React, { useState } from "react";
-import { NavLink } from 'react-router-dom';
-import Footer from '../Footer/Footer';
-import contactStyles from './Contact.module.css'; // Renamed import
-import globalStyles from './Contact.css'; // Renamed import
-import images from '../../assets/dashimages';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhone, faEnvelope, faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
+import Footer from '../Footer/Footer';
+import contactStyles from './Contact.css';
+import TopBar from '../tobars/topbars';
 
-const Contact= () => {
+const Contact = () => {
     const [formContent, setFormContent] = useState({});
 
     const handleChange = (event) => {
@@ -20,94 +18,76 @@ const Contact= () => {
 
     return (
         <>
-            {/* Top navigation structure */}
-            <div className={`home-page ${globalStyles.homePage}`}>
-                <div className={`top-bar ${globalStyles.topBar}`}>
-                    <img src={images.logo} alt="Logo" className={`logo ${globalStyles.logo}`} />
-                    <div className={`buttons ${globalStyles.buttons}`}>
-                        <NavLink to="/signup" className={`green-button ${globalStyles.greenButton}`}>Sign Up</NavLink>
-                        <NavLink to="/login" className={`green-button ${globalStyles.greenButton}`}>Login</NavLink>
-                    </div>
-                </div>
+            <TopBar />
 
-                <div className={`navigation-bar ${globalStyles.navigationBar}`}>
-                    <div className={`dropdown ${globalStyles.dropdown}`}>
-                        <NavLink to="#" className={`nav-item ${globalStyles.navItem}`}>Market Place</NavLink>
-                        <div className={`dropdown-content ${globalStyles.dropdownContent}`}>
-                            <NavLink to="/purchase" className={`dropdown-item ${globalStyles.dropdownItem}`}>Purchase</NavLink>
-                            <NavLink to="/sell" className={`dropdown-item ${globalStyles.dropdownItem}`}>Sell</NavLink>
-                        </div>
-                    </div>
-                    <a href="https://smartmvua-forecast.netlify.app/" className={`nav-item ${globalStyles.navItem}`}>Weather</a>
-                    <div className={`dropdown ${globalStyles.dropdown}`}>
-                        <NavLink to="/market-insight" className={`nav-item ${globalStyles.navItem}`} activeClassName="active">Market Insight</NavLink>
-                        <div className={`dropdown-content ${globalStyles.dropdownContent}`}>
-                            <NavLink to="/workshops" className={`dropdown-item ${globalStyles.dropdownItem}`}>Workshops</NavLink>
-                            <NavLink to="/projects" className={`dropdown-item ${globalStyles.dropdownItem}`}>Projects</NavLink>
-                            <NavLink to="/modern-farming" className={`dropdown-item ${globalStyles.dropdownItem}`}>Modern Farming</NavLink>
-                        </div>
-                    </div>
-                    <div className={`dropdown ${globalStyles.dropdown}`}>
-                        <NavLink to="/more-insight" className={`nav-item ${globalStyles.navItem}`} activeClassName="active">More Insight</NavLink>
-                        <div className={`dropdown-content ${globalStyles.dropdownContent}`}>
-                            <NavLink to="/reach-us" className={`dropdown-item ${globalStyles.dropdownItem}`}>Reach Us</NavLink>
-                            <NavLink to="/contact" className={`dropdown-item ${globalStyles.dropdownItem}`}>Contact</NavLink>
-                            <NavLink to="/about" className={`dropdown-item ${globalStyles.dropdownItem}`}>About Us</NavLink>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <div className={`container ${contactStyles.contain}`}>
+                <p data-aos='fade-up' className={`${contactStyles.heading}`}>
+                    We'd Love to Hear From You
+                </p>
 
-            {/* Contact Information and Map */}
-            <div className={`container ${contactStyles.contain} overflow-hidden`}>
-                <p data-aos='fade-up' className={`${contactStyles.heading} mx-auto`}>We'd Love to Hear From You</p>
-
-                <div className="row">
-                    <div className="col-md-4" data-aos='fade-right'>
-                        <p className={contactStyles.head}>Address</p>
-                        <p className={contactStyles.content}>
+                <div className="contact-info">
+                    <div data-aos='fade-right'>
+                        <h3>Address</h3>
+                        <p>
                             <FontAwesomeIcon icon={faMapMarkerAlt} /> Nairobi, Kenya
                         </p>
                     </div>
 
-                    <div className="col-md-4" data-aos='fade-up' data-aos-offset='100'>
-                        <p className={contactStyles.head}>Contact</p>
-                        <p className={contactStyles.content}>
-                            <FontAwesomeIcon icon={faPhone} /> Phone: +254 712 345678
+                    <div data-aos='fade-up'>
+                        <h3>Contact</h3>
+                        <p>
+                            <FontAwesomeIcon icon={faPhone} /> Phone: +254 707687930
                         </p>
-                        <p className={contactStyles.content}>
-                            <FontAwesomeIcon icon={faEnvelope} /> Email: info@smartmavuno.com
+                        <p>
+                            <FontAwesomeIcon icon={faEnvelope} /> Email: info@smartmavuno.africa
                         </p>
                     </div>
 
-                    <div className="col-md-4" data-aos='fade-left' data-aos-offset='70'>
-                        <p className={contactStyles.head}>Working Hours</p>
-                        <p className={contactStyles.content}>Monday - Friday: 09:00 - 20:00</p>
-                        <p className={contactStyles.content}>Sunday & Saturday: 10:30 - 22:00</p>
+                    <div data-aos='fade-left'>
+                        <h3>Working Hours</h3>
+                        <p>Monday - Friday: 09:00 - 20:00</p>
+                        <p>Saturday & Sunday: 10:30 - 22:00</p>
                     </div>
                 </div>
 
-                <p className={contactStyles.email} data-aos='fade-up'>You can email us</p>
+                <h2>You can email us</h2>
 
-                <div className="row">
-                    <div className="col-md-6" data-aos='fade-right' style={{ textAlign: 'left' }}>
-                        <label className={contactStyles.label}>Name</label><br />
-                        <input name="name" value={formContent.name} onChange={handleChange} className={contactStyles.input} type="text" />
+                <div className={contactStyles.contactForm}>
+                    <label>Name</label>
+                    <input 
+                        name="name" 
+                        value={formContent.name || ''} 
+                        onChange={handleChange} 
+                        type="text" 
+                        required 
+                    />
 
-                        <label className={contactStyles.label}>Email</label><br />
-                        <input name="email" value={formContent.email} onChange={handleChange} className={contactStyles.input} type="email" />
+                    <label>Email</label>
+                    <input 
+                        name="email" 
+                        value={formContent.email || ''} 
+                        onChange={handleChange} 
+                        type="email" 
+                        required 
+                    />
 
-                        <label className={contactStyles.label}>Subject</label><br />
-                        <input name="subject" value={formContent.subject} onChange={handleChange} className={contactStyles.input} type="text" />
-                    </div>
+                    <label>Subject</label>
+                    <input 
+                        name="subject" 
+                        value={formContent.subject || ''} 
+                        onChange={handleChange} 
+                        type="text" 
+                        required 
+                    />
 
-                    <div className="col-md-6" data-aos='fade-left' style={{ textAlign: 'left' }}>
-                        <label className={contactStyles.label}>Message</label><br />
-                        <textarea name="message" value={formContent.message} onChange={handleChange} className={`${contactStyles.input} ${contactStyles.msg}`} type="text" />
-                        <div style={{ textAlign: 'right' }}>
-                            <button className={`btn custom_btn ${contactStyles.btn}`}>SEND</button>
-                        </div>
-                    </div>
+                    <label>Message</label>
+                    <textarea 
+                        name="message" 
+                        value={formContent.message || ''} 
+                        onChange={handleChange} 
+                        required 
+                    />
+                    <button type="submit">SEND</button>
                 </div>
 
                 {/* Map Section */}
@@ -121,11 +101,10 @@ const Contact= () => {
                         loading="lazy"
                         referrerPolicy="no-referrer-when-downgrade"
                         title="Nairobi Location"
-                    ></iframe>
+                    />
                 </div>
             </div>
 
-            {/* Footer Section */}
             <Footer />
         </>
     );
