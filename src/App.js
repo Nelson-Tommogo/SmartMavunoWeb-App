@@ -20,6 +20,9 @@ import ProjectsPage from './components/projects/project';
 
 
 function App() {
+
+ 
+
   return (
     <Router>
       <Routes>

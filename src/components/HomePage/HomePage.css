@@ -50,14 +50,15 @@ html, body {
   
   .navigation-bar {
     display: flex;
-    background-color: rgb(53, 116, 158);
-    justify-content: center;
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+    justify-content: flex-start; /* Align items to the left */
     align-items: center;
-    padding: 8px 16px; /* Reduced padding for compactness */
+    padding: 8px 16px; /* Compact padding */
     border-radius: 15px; /* Rounded corners */
-    margin: 0 20px; /* Adjusted margin */
-    flex-wrap: nowrap; /* Prevent wrapping of items */
+    margin: 0 20px; /* Adjust margin */
+    overflow: hidden; /* Hide overflow if needed */
 }
+
 
 .nav-item {
     text-decoration: none;
