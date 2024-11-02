@@ -80,7 +80,6 @@ const HomePage = () => {
     return (
         <div className="home-page">
             {/* Navigation Container */}
-            <div className="navigation-container"> 
     <div className="navigation-bar">
         <img src={logo}  alt="Logo" className="logo" /> {/* Logo */}
         
@@ -120,7 +119,6 @@ const HomePage = () => {
         <a href="/login" className="nav-item login-button">
             <FontAwesomeIcon icon={faSignInAlt} /> Login
         </a>
-    </div>
 </div>
 
 
