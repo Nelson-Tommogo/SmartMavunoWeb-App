@@ -80,46 +80,58 @@ const HomePage = () => {
     return (
         <div className="home-page">
             {/* Navigation Container */}
-    <div className="navigation-bar">
-        <img src={logo}  alt="Logo" className="logo" /> {/* Logo */}
-        
-        <div className="dropdown">
-            <NavLink to="#" className="nav-item">Home</NavLink>
-            <div className="dropdown-content">
-                <NavLink to="/dashboard" className="dropdown-item">Market Place</NavLink>
-                <NavLink to="/community" className="dropdown-item">Community</NavLink>
-            </div>
+            <div className="navigation-bar">
+    <img src={logo} alt="Logo" className="logo" /> {/* Logo */}
+    
+    <div className="dropdown">
+        <NavLink to="#" className="nav-item">Home</NavLink>
+        <div className="dropdown-content">
+            <NavLink to="/dashboard" className="dropdown-item">Market Place</NavLink>
+            <NavLink to="/community" className="dropdown-item">Community</NavLink>
         </div>
+    </div>
 
-        <a href={features.find(feature => feature.name === "Weather Report").link} className="nav-item">Weather</a>
+    <a href={features.find(feature => feature.name === "Weather Report").link} className="nav-item">Weather</a>
 
-        <div className="dropdown">
-            <NavLink to="/market-insight" className="nav-item" activeClassName="active">Resources</NavLink>
-            <div className="dropdown-content">
-                <NavLink to="/project" className="dropdown-item">Projects</NavLink>
-                <NavLink to="/workshops" className="dropdown-item">Workshops</NavLink>
-                <NavLink to="/modern-farming" className="dropdown-item">Modern Farming</NavLink>
-                <NavLink to="/articles" className="dropdown-item">Articles and Blogs</NavLink>
-            </div>
+    <div className="dropdown">
+        <NavLink to="/market-insight" className="nav-item" activeClassName="active">Resources</NavLink>
+        <div className="dropdown-content">
+            <NavLink to="/project" className="dropdown-item">Projects</NavLink>
+            <NavLink to="/workshops" className="dropdown-item">Workshops</NavLink>
+            <NavLink to="/modern-farming" className="dropdown-item">Modern Farming</NavLink>
+            <NavLink to="/articles" className="dropdown-item">Articles and Blogs</NavLink>
         </div>
+    </div>
 
-        <div className="dropdown">
-            <NavLink to="/more-insight" className="nav-item" activeClassName="active">More Insights</NavLink>
-            <div className="dropdown-content">
-                <NavLink to="/reach-us" className="dropdown-item">Reach Us</NavLink>
-                <NavLink to="/contact" className="dropdown-item">Contact</NavLink>
-                <NavLink to="/about" className="dropdown-item">About Us</NavLink>
-            </div>
+    <div className="dropdown">
+        <NavLink to="/more-insight" className="nav-item" activeClassName="active">More Insights</NavLink>
+        <div className="dropdown-content">
+            <NavLink to="/reach-us" className="dropdown-item">Reach Us</NavLink>
+            <NavLink to="/contact" className="dropdown-item">Contact</NavLink>
+            <NavLink to="/about" className="dropdown-item">About Us</NavLink>
         </div>
+    </div>
 
-        {/* Sign Up and Login Buttons with Icons */}
-        <a href="/signup" className="nav-item signup-button">
-            <FontAwesomeIcon icon={faUserPlus} /> Sign Up
-        </a>
-        <a href="/login" className="nav-item login-button">
-            <FontAwesomeIcon icon={faSignInAlt} /> Login
-        </a>
+    {/* Registration Dropdown */}
+    <div className="dropdown">
+        <button className="nav-item dropdown-toggle" id="registrationDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+            Registration
+        </button>
+        <ul className="dropdown-menu" aria-labelledby="registrationDropdown">
+            <li>
+                <NavLink to="/signup" className="dropdown-item">
+                    <FontAwesomeIcon icon={faUserPlus} /> Sign Up
+                </NavLink>
+            </li>
+            <li>
+                <NavLink to="/login" className="dropdown-item">
+                    <FontAwesomeIcon icon={faSignInAlt} /> Login
+                </NavLink>
+            </li>
+        </ul>
+    </div>
 </div>
+
 
 
 

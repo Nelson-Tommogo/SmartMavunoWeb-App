@@ -67,7 +67,6 @@ html, body {
     padding: 4px 6px; /* Reduced padding for items */
     border-radius: 5px;
     display: flex;
-    max-width: 100%;
     align-items: center; /* Center items vertically */
     margin: 0 2px; /* Reduce spacing between items */
 }
@@ -82,38 +81,45 @@ html, body {
     background-color: #4CAF50; /* Background color for active nav item */
 }
 
-/* Dropdown content */
+/* Dropdown */
 .dropdown {
     position: relative; /* Position relative for dropdown */
 }
 
-.dropdown-content {
+.dropdown-toggle {
+    background: transparent; /* Transparent background for dropdown toggle */
+    border: none; /* No border */
+    color: green; /* Match nav item color */
+    cursor: pointer; /* Pointer cursor */
+    padding: 4px 6px; /* Padding to match nav items */
+}
+
+/* Dropdown content */
+.dropdown-menu {
     display: none; /* Hidden by default */
-    position: absolute;
+    position: absolute; /* Position below the nav item */
     background-color: #fff; /* Match background color */
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-    top: 100%; /* Position below the nav item */
-    left: 0; /* Align to the left of the nav item */
+    min-width: 160px; /* Minimum width for dropdown */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    z-index: 1; /* Bring dropdown above other content */
 }
 
-.dropdown-content .dropdown-item {
+.dropdown-menu .dropdown-item {
     color: green; /* Default color for dropdown items */
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    border-radius: 5px;
+    padding: 8px 12px; /* Padding for dropdown items */
+    text-decoration: none; /* Remove underline */
+    display: block; /* Display as block for full width */
 }
 
-.dropdown-content .dropdown-item:hover {
+.dropdown-menu .dropdown-item:hover {
     background-color: #ddd; /* Hover background for dropdown items */
 }
 
 /* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
-    display: block;
+.dropdown:hover .dropdown-menu {
+    display: block; /* Show dropdown on hover */
 }
+
 
   
   /* Footer styling */
