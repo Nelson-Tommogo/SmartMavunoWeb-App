@@ -80,13 +80,15 @@ const HomePage = () => {
     return (
         <div className="home-page">
             {/* Navigation Container */}
-            <div className="navigation-bar">
+<div className="navigation-bar">
     <img src={logo} alt="Logo" className="logo" /> {/* Logo */}
     
     <div className="dropdown">
         <NavLink to="#" className="nav-item">Home</NavLink>
         <div className="dropdown-content">
-            <NavLink to="/dashboard" className="dropdown-item">Market Place</NavLink>
+        <a href="https://smartmavunoshop.vercel.app/" className="dropdown-item" target="_blank" rel="noopener noreferrer">
+  Market Place
+</a>
             <NavLink to="/community" className="dropdown-item">Community</NavLink>
         </div>
     </div>
