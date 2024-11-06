@@ -15,30 +15,31 @@ const projects = [
     description: 'Learn about soil health management and practices.',
     image: soilHealthImage,
     appLink: 'https://example.com/watch/soil-health-workshop',
-    youtubeLink: 'https://youtube.com/watch/soil-health-workshop',
+    youtubeLink: 'https://youtu.be/74P20fGJv1w?si=MkCadpr0mpqNXLs0', // Updated YouTube link
   },
   {
     title: 'Crop Rotation Techniques',
     description: 'Explore effective crop rotation strategies for better yields.',
     image: cropRotationImage,
     appLink: 'https://example.com/watch/crop-rotation-techniques',
-    youtubeLink: 'https://youtube.com/watch/crop-rotation-techniques',
+    youtubeLink: 'https://youtu.be/xIYsB_2_6go?si=bOJkNX6iyhMlNeI_', // Updated YouTube link
   },
   {
     title: 'Sustainable Farming Practices',
     description: 'Understand sustainable practices to enhance productivity.',
     image: sustainableFarmingImage,
     appLink: 'https://example.com/watch/sustainable-farming-practices',
-    youtubeLink: 'https://youtube.com/watch/sustainable-farming-practices',
+    youtubeLink: 'https://youtu.be/iloAQmroRK0?si=5JyIVHBR_dKb3jLO', // Updated YouTube link
   },
   {
     title: 'Pest Management Solutions',
     description: 'Discover innovative solutions for pest management.',
     image: pestManagementImage,
     appLink: 'https://example.com/watch/pest-management-solutions',
-    youtubeLink: 'https://youtube.com/watch/pest-management-solutions',
+    youtubeLink: 'https://youtu.be/_R0My-2ag94?si=COSMSZH02D3Uhb3n', // Updated YouTube link
   },
 ];
+
 
 const ProjectsPage = () => {
   return (
