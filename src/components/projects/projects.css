@@ -1,10 +1,12 @@
 .projects-page {
     padding: 20px;
-    background-color: #f9f9f9; /* Light background for the entire page */
+    background-color: #f9f9f9;
+    margin-top: 100px; 
+    padding-bottom: 40px; 
 }
 
 .container {
-    max-width: 1200px; /* Limit the width of the container */
+    max-width: 1200px; 
     margin: 0 auto; /* Center the container */
     padding: 0 20px; /* Padding for small screens */
 }
@@ -13,13 +15,16 @@ h1 {
     text-align: center;
     color: #4CAF50; /* Green color for main heading */
     margin-bottom: 30px;
+    font-size: 2rem; /* Make the title a little bigger */
+    font-weight: bold;
 }
 
 .workshop-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive grid layout */
     gap: 20px; /* Space between project cards */
     justify-items: center; /* Center items in each grid cell */
+    margin-top: 20px; /* Adds some margin between title and grid */
 }
 
 .project-card {
@@ -30,11 +35,12 @@ h1 {
     text-align: center;
     background-color: #fff; /* White background for project cards */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    transition: transform 0.2s; /* Smooth hover effect */
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth hover effect */
 }
 
 .project-card:hover {
     transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
 }
 
 .project-image {
@@ -47,6 +53,7 @@ h1 {
     font-size: 1.5rem;
     color: #333; /* Darker color for titles */
     margin: 15px 0 10px; /* Margin around titles */
+    font-weight: bold;
 }
 
 .project-description {
@@ -63,7 +70,7 @@ h1 {
     border-radius: 5px;
     cursor: pointer;
     margin-top: 10px;
-    transition: background-color 0.3s; /* Smooth background change */
+    transition: background-color 0.3s ease; /* Smooth background change */
 }
 
 .participate-button:hover {
@@ -88,6 +95,7 @@ h1 {
     margin-top: 10px;
     border-top: 1px solid #ddd; /* Separator line above testimonial */
     padding-top: 10px; /* Padding for space above testimonial */
+    font-size: 1.1rem; /* Make the testimonial text slightly larger */
 }
 
 .previous-projects {
@@ -100,6 +108,7 @@ h1 {
     margin-right: auto; /* Center the section */
     border-radius: 8px; /* Rounded corners */
     text-align: center; /* Center text */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Add shadow for better separation */
 }
 
 .previous-project-card {
@@ -113,9 +122,41 @@ h1 {
 .previous-project-title {
     font-size: 1.5rem;
     color: #4CAF50; /* Green color for titles */
+    font-weight: bold;
 }
 
 .previous-project-description {
     font-size: 1rem;
     color: #666; /* Lighter color for descriptions */
+    margin-bottom: 10px;
+}
+
+/* Responsive Layout Adjustments */
+@media (max-width: 768px) {
+    .workshop-grid {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Adjust grid for smaller screens */
+        gap: 15px; /* Slightly reduce gap for smaller screens */
+    }
+    .project-title {
+        font-size: 1.3rem; /* Smaller font for smaller screens */
+    }
+    .testimonial {
+        font-size: 1rem; /* Smaller font for testimonials */
+    }
+}
+
+/* Ensuring everything scrolls together */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+html, body {
+    height: 100%; /* Ensure the page takes up full height */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+main {
+    padding-top: 100px; /* Adds space to the top content to avoid overlap with fixed top bar */
 }
