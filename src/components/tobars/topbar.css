@@ -1,29 +1,44 @@
+
 .top-bar {
     display: flex;
-    justify-content: space-between;
+    justify-content: center; /* Center content horizontally */
     align-items: center;
     padding: 10px 20px;
     background-color: #4CAF50; /* Green background */
     color: white; /* White text */
-    margin: 20px auto; /* Centering the top bar with margin */
+    margin-top: 50px; /* Add distance from the top of the screen */
+    margin-left: auto; /* Auto margin for centering */
+    margin-right: auto; /* Auto margin for centering */
     border-radius: 15px; /* Rounded corners */
-    max-width: 1200px; /* Set a maximum width */
-    width: 100%; /* Full width */
+    width: 80%; /* Full width */
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Optional shadow for depth */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0; /* Ensure the element takes up space and remains in the center */
+    z-index: 1000;
 }
 
+
+/* The container that holds the logo and navigation */
 .container {
     display: flex;
-    justify-content: space-between; /* Space between logo and nav */
+    margin-top: 50px;
+    margin-bottom: 50px;
+    justify-content: center; /* Center content horizontally in container */
     align-items: center;
-    width: 100%;
+    width: 100%; /* Full width */
+    max-width: 1200px; /* Set a maximum width to avoid stretching too far */
+    margin: 0 auto; /* Center container within the page */
 }
 
+/* The logo styles */
 .logo {
     width: 150px; /* Adjust size as needed */
-    margin-right: auto; /* Push navigation to the right */
+    margin-right: 20px; /* Add some space between the logo and the navigation */
 }
 
+/* Navigation styling */
 .navigation {
     display: flex;
     gap: 20px; /* Space between nav items */
@@ -31,6 +46,7 @@
     flex-grow: 1; /* Allow navigation to grow */
 }
 
+/* Styling for each navigation item */
 .nav-item {
     color: white;
     text-decoration: none;
@@ -42,26 +58,16 @@
     color: #f0e68c; /* Light yellow on hover */
 }
 
+/* Removed auth buttons section since we no longer need them */
 .auth-buttons {
-    display: flex;
-    gap: 10px;
+    display: none; /* Hide sign up/login buttons */
 }
 
-.button {
-    padding: 10px 15px;
-    background-color: white; /* White button background */
-    color: #4CAF50; /* Green text */
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-    display: flex;
-    align-items: center; /* Center the icon vertically */
-}
-
-.button:hover {
-    background-color: #f0e68c; /* Light yellow on hover */
-}
-
-.button .svg-inline--fa {
-    margin-right: 5px; /* Space between icon and text */
+/* Optional styling for mobile responsiveness */
+@media (max-width: 768px) {
+    .navigation {
+        flex-direction: column; /* Stack the navigation items vertically on smaller screens */
+        gap: 10px; /* Reduced gap between items */
+        text-align: center;
+    }
 }
